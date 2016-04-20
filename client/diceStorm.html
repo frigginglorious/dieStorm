@@ -1,0 +1,43 @@
+<head>
+  <title>dieStorm</title>
+</head>
+
+<!-- Just tells the body to call the userRoll template below -->
+<body>
+  {{> userRoll }}
+</body>
+
+<!--
+
+    The html content of the divs are actually the value that's passed to the roller function.
+    So lets keep .aDie divs containing just numbers for now :D
+
+ -->
+<template name="userRoll">
+  <h1>dieStorm</h1>
+  <div class="aDie">4</div>
+  <div class="aDie">6</div>
+  <div class="aDie">8</div>
+  <div class="aDie">10</div>
+  <div class="aDie">12</div>
+  <div class="aDie">20</div>
+  <div class="aDie">100</div>
+  <!--
+      data is set to populate here, and each new item is passed to the "bol" template
+  -->
+  <div id="passDataResult">
+    {{#each bolls}}
+      {{> boll}}
+    {{/each}}
+  </div>
+</template>
+
+<!--
+    And finally, lists each die roll as it's added to the Mongo Collection
+-->
+
+<template name="boll">
+  <li class="rollList">
+    <span class="aUser">{{ username }}</span><span class="aType"> rolled a d{{ dieType }}</span><span class="aRoll">: {{ theRoll }}</span>
+  </li>
+</template>
