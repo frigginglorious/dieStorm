@@ -1,9 +1,13 @@
 # dieStorm
-A Sandstorm application demo built using MeteorJS for D20 RPG Dice Rolling. This was used in a talk given at [Twin Cities Code Camp](http://twincitiescodecamp.com/#/Talks/31).
+A [Sandstorm](https://sandstorm.io/) application demo built using [Meteor](https://www.meteor.com/) for D20 RPG Dice Rolling. This was used in a talk given at [Twin Cities Code Camp](http://twincitiescodecamp.com/#/Talks/31).
 
-This app's purpose is to demonstrate how easy it is to produce a functioning application that has multi-user features and built-in (read: ignored) security with [Sandstorm](https://sandstorm.io/).
+This app's purpose is to demonstrate how easy it is to produce a functioning aplication that has multi-user features and built-in security. The app relies entirely on Sandstorm for that security, and achieves it through zero lines of code.
 
-### Try it yourself
+### Try Live Demo
+
+[![Live Demo on Sandstorm Oasis](https://sandstorm.io/news/images/2016-02-05-app-author-publicity-oasis/try-live%20demo-783189.svg)](https://oasis.sandstorm.io/appdemo/jh06c88d4mrs81frj58psq10aeq6dghad7duuq8nk88j8zqx0zqh)
+
+### Install it Yourself
 
 Install Sandstorm, all you need is a 64 bit linux machine! Go to https://sandstorm.io/install
 
@@ -17,17 +21,20 @@ For installing this app and running on your own Sandstorm Server: upload the [di
 ```
 git clone https://github.com/frigginglorious/dieStorm.git
 cd dieStorm
-vagrant-spk setupvm meteor
 vagrant-spk vm up (or vagrant-spk up if that doesn't work)
-vagrant-spk init
 vagrant-spk dev
 ```
 * go to http://local.sandstorm.io:6080/
 
+### Development Notes
+
+[Meteor](https://www.meteor.com/) is full-stack javascript. All of the logic that makes this app tick is in one of four files, in the /client, /server, and /both folders.
 
 ### Slides
 
 View slides from the Twin Cities Code Camp presentation: [Six Reasons Sandstorm.io is Rocking the World of Open Source Web Apps](https://zzr0p7gctpmv6s9wtr3y.oasis.sandstorm.io/index.html). For an editable version of slides in Sandstorm, download a copy of the HackerSlides app [here](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c).
+
+You can fork the slides and get your own, editable version by taking this HackerSlides [grain backup](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c) and doing a 'Restore backup...' on your own account on whatever Sandstorm server you like.
 
 ### Issues?
 
