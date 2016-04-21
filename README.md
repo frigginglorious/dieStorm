@@ -11,7 +11,7 @@ This app's purpose is to demonstrate how easy it is to produce a functioning apl
 
 Install Sandstorm, all you need is a 64 bit linux machine! Go to https://sandstorm.io/install
 
-For installing this app and running on your own Sandstorm Server: upload the [dieStorm.spk](https://drive.google.com/open?id=0B5nUIfDIo1rQdEE3VzZkZGN1bjQ) package file from the main "Apps" page of your Sandstorm server.
+For installing this app and running on your own Sandstorm Server: upload the [dieStorm.spk](https://github.com/frigginglorious/dieStorm/releases/download/1.0/dieStorm.spk) package file from the main "Apps" page of your Sandstorm server.
 
 ### Install for Development
 
@@ -32,9 +32,9 @@ vagrant-spk dev
 
 ### Slides
 
-View slides from the Twin Cities Code Camp presentation: [Six Reasons Sandstorm.io is Rocking the World of Open Source Web Apps](https://zzr0p7gctpmv6s9wtr3y.oasis.sandstorm.io/index.html). For an editable version of slides in Sandstorm, download a copy of the HackerSlides app [here](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c).
+View slides from the Twin Cities Code Camp presentation: [Six Reasons Sandstorm.io is Rocking the World of Open Source Web Apps](https://zzr0p7gctpmv6s9wtr3y.oasis.sandstorm.io/index.html).
 
-You can fork the slides and get your own, editable version by taking this HackerSlides [grain backup](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c) and doing a 'Restore backup...' on your own account on whatever Sandstorm server you like.
+You can fork the slides and get your own, editable version in HackerSlides by taking this [grain backup](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c) and doing a 'Restore backup...' on your own account on whatever Sandstorm server you like.
 
 ### Issues?
 
