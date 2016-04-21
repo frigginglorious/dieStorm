@@ -38,6 +38,6 @@
 
 <template name="boll">
   <li class="rollList">
-    <span class="aUser">{{ username }}</span><span class="aType"> rolled a d{{ dieType }}</span><span class="aRoll">: {{ theRoll }}</span>
+    <span class="aDate">{{ formatDate createdAt }} </span><span class="aUser">{{ username }}</span><span class="aType"> rolled a d{{ dieType }}</span><span class="aRoll">: {{ theRoll }}</span>
   </li>
 </template>

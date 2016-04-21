@@ -16,3 +16,10 @@
     margin: 0.5rem;
     font-family: sans-serif;
 }
+
+.aDate{
+    color: darkgray;
+}
+.aUser{
+    color: darkred;
+}

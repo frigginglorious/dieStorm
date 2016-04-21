@@ -1,6 +1,10 @@
 /*
     This is the Clientside logic file.
  */
+Template.registerHelper('formatDate', function(date) {
+    return moment(date).format('MMM Do, h:mm:ss a');
+});
+
 
 Template.userRoll.onCreated(function userRollOnCreated() {
     Meteor.call('checkSandstormUserPermissions');
