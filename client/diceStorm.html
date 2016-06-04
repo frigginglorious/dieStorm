@@ -25,11 +25,11 @@
   <!--
       data is set to populate here, and each new item is passed to the "bol" template
   -->
-  <div id="passDataResult">
+  <table id="passDataResult">
     {{#each bolls}}
       {{> boll}}
     {{/each}}
-  </div>
+  </table>
 </template>
 
 <!--
@@ -37,7 +37,7 @@
 -->
 
 <template name="boll">
-  <li class="rollList">
-    <span class="aDate">{{ formatDate createdAt }} </span><span class="aUser">{{ username }}</span><span class="aType"> rolled a d{{ dieType }}</span><span class="aRoll">: {{ theRoll }}</span>
-  </li>
+  <tr class="rollList">
+    <td class="aDate">{{ formatDate createdAt }} </td><td class="aUser">{{ username }}</td><td class="aType"> rolled a d{{ dieType }}</td><td class="aRoll">{{ theRoll }}</td>
+  </tr>
 </template>

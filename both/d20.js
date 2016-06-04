@@ -30,7 +30,6 @@
                 for (var i in result) {
                     num += result[i];
                 }
-
                 return num;
             }
         },

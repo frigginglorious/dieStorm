@@ -1,8 +1,49 @@
+/*@font-face {*/
+    /*font-family: 'EnchantedLand';*/
+    /*src: url('/client/font/EnchantedLand.eot');*/
+    /*src: url('/client/font/EnchantedLand.woff2') format('woff2'),*/
+    /*url('/client/font/EnchantedLand.woff') format('woff'),*/
+    /*url('/client/font/EnchantedLand.svg#EnchantedLand') format('svg'),*/
+    /*url('/client/font/EnchantedLand.eot?#iefix') format('embedded-opentype');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+
+
+body{
+    background-color: #F8E5CB;
+    font-family: 'EnchantedLand';
+    background: rgba(185,132,121,1);
+    background: -moz-linear-gradient(left, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(185,132,121,1)), color-stop(3%, rgba(188,138,125,1)), color-stop(50%, rgba(240,224,193,0.95)), color-stop(61%, rgba(240,224,193,0.94)), color-stop(71%, rgba(240,224,193,0.93)), color-stop(100%, rgba(128,108,70,0.9)));
+    background: -webkit-linear-gradient(left, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
+    background: -o-linear-gradient(left, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
+    background: -ms-linear-gradient(left, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
+    background: linear-gradient(to right, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b98479', endColorstr='#806c46', GradientType=1 );
+}
+
+h1{
+    font-family: EnchantedLand;
+}
+#passDataResult{
+    background-color: #ebe5d9;
+}
+
 .rollList span{
     /*padding-right: 1em;*/
 }
+
 .aRoll{
     font-weight: bolder;
+}
+
+.aDate{
+    color: darkgray;
+}
+
+.aUser{
+    color: darkred;
 }
 
 .aDie {
@@ -15,11 +56,43 @@
     text-align: center;
     margin: 0.5rem;
     font-family: sans-serif;
+    color: beige;
+
+    -webkit-box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
+    -moz-box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
+    box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
+
 }
 
-.aDate{
-    color: darkgray;
+@-webkit-keyframes spinnerRotate
+{
+    from{-webkit-transform:rotate(0deg);}
+    to{-webkit-transform:rotate(360deg);}
 }
-.aUser{
-    color: darkred;
+@-moz-keyframes spinnerRotate
+{
+    from{-moz-transform:rotate(0deg);}
+    to{-moz-transform:rotate(360deg);}
+}
+@-ms-keyframes spinnerRotate
+{
+    from{-ms-transform:rotate(0deg);}
+    to{-ms-transform:rotate(360deg);}
+}
+.spin{
+    position:fixed;
+    top:2%;
+    left:0%;
+    -webkit-animation-name: spinnerRotate;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spinnerRotate;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spinnerRotate;
+    -ms-animation-duration: 5s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 }
