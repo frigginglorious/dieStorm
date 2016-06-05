@@ -1,18 +1,19 @@
-/*@font-face {*/
-    /*font-family: 'EnchantedLand';*/
-    /*src: url('/client/font/EnchantedLand.eot');*/
-    /*src: url('/client/font/EnchantedLand.woff2') format('woff2'),*/
-    /*url('/client/font/EnchantedLand.woff') format('woff'),*/
-    /*url('/client/font/EnchantedLand.svg#EnchantedLand') format('svg'),*/
-    /*url('/client/font/EnchantedLand.eot?#iefix') format('embedded-opentype');*/
-    /*font-weight: normal;*/
-    /*font-style: normal;*/
-/*}*/
+@font-face {
+    font-family: 'EnchantedLand';
+    src: url('/font/EnchantedLand.eot');
+    src: url('/font/EnchantedLand.woff2') format('woff2'),
+    url('/font/EnchantedLand.woff') format('woff'),
+    url('/font/EnchantedLand.svg#EnchantedLand') format('svg'),
+    url('/font/EnchantedLand.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 4px;
+}
 
 
 body{
     background-color: #F8E5CB;
-    font-family: 'EnchantedLand';
+    /*font-family: 'EnchantedLand';*/
     background: rgba(185,132,121,1);
     background: -moz-linear-gradient(left, rgba(185,132,121,1) 0%, rgba(188,138,125,1) 3%, rgba(240,224,193,0.95) 50%, rgba(240,224,193,0.94) 61%, rgba(240,224,193,0.93) 71%, rgba(128,108,70,0.9) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(185,132,121,1)), color-stop(3%, rgba(188,138,125,1)), color-stop(50%, rgba(240,224,193,0.95)), color-stop(61%, rgba(240,224,193,0.94)), color-stop(71%, rgba(240,224,193,0.93)), color-stop(100%, rgba(128,108,70,0.9)));
@@ -25,6 +26,8 @@ body{
 
 h1{
     font-family: EnchantedLand;
+    font-size: 5em;
+    margin:0px;
 }
 #passDataResult{
     background-color: #ebe5d9;
@@ -36,6 +39,7 @@ h1{
 
 .aRoll{
     font-weight: bolder;
+    /*font-family: EnchantedLand;*/
 }
 
 .aDate{
@@ -43,24 +47,26 @@ h1{
 }
 
 .aUser{
+    font-family: EnchantedLand;
     color: darkred;
 }
 
 .aDie {
+    font-family: EnchantedLand;
+    font-size: 2rem;
+    background-color: rgb(46, 74, 117);
+    color: beige;
     display: inline-block;
     padding: 1.5rem 0;
     width: 5.5rem;
     border: 2px solid;
     border-radius: 1rem;
-    font-size: 2rem;
     text-align: center;
     margin: 0.5rem;
-    font-family: sans-serif;
-    color: beige;
 
-    -webkit-box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
-    -moz-box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
-    box-shadow: inset 4px -4px 104px 9px rgba(0,0,0,0.69);
+    -webkit-box-shadow: inset 0px 0px 40px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 40px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 40px 1px rgba(0,0,0,0.75);
 
 }
 
@@ -80,19 +86,16 @@ h1{
     to{-ms-transform:rotate(360deg);}
 }
 .spin{
-    position:fixed;
-    top:2%;
-    left:0%;
     -webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotate;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 1s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
     -ms-animation-name: spinnerRotate;
-    -ms-animation-duration: 5s;
+    -ms-animation-duration: 1s;
     -ms-animation-iteration-count: infinite;
     -ms-animation-timing-function: linear;
 }
