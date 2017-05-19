@@ -32,7 +32,7 @@ vagrant-spk dev
 
 ### Slides
 
-View slides from the Twin Cities Code Camp presentation: [Six Reasons Sandstorm.io is Rocking the World of Open Source Web Apps](https://zzr0p7gctpmv6s9wtr3y.oasis.sandstorm.io/index.html).
+View slides from the Twin Cities Code Camp presentation: [Six Reasons Sandstorm.io is Rocking the World of Open Source Web Apps](http://l806a3jti9bjzjgjjop8.frigginglorious.sandcats.io:6080/index.html).
 
 You can fork the slides and get your own, editable version in HackerSlides by taking this [grain backup](https://drive.google.com/open?id=0B5nUIfDIo1rQMElkaVBxN0hsM2c) and doing a 'Restore backup...' on your own account on whatever Sandstorm server you like.
 
@@ -41,4 +41,4 @@ You can fork the slides and get your own, editable version in HackerSlides by ta
 * Problem: The box 'sandstorm/debian-jessie64' could not be found.
 * Solution: Download current version of Vagrant from https://www.vagrantup.com/downloads.html
 
-Please feel free to open an issue or reach out to me on twitter @frigginglorious if you have any problems.
+Please feel free to open an issue or reach out to me on twitter [@frigginglorious](http://twitter.com/frigginglorious) if you have any problems.
