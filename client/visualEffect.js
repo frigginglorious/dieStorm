@@ -5,6 +5,6 @@ $(document).ready(function(){
         spin.addClass('spin');
         setTimeout(function (){
             spin.removeClass('spin');
-        }, 1500);
+        }, 1000);
     });
 });

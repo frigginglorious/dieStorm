@@ -8,16 +8,22 @@ Meteor.startup(function () {
 
         checkSandstormUserPermissions: function () {
 
-            var sandstormUser = this.connection.sandstormUser();
-            if (!sandstormUser) {
-                console.log('no sandstormUser');
-                return;
+            // if (typeof this.connection.sandstormUser() === "function") {
+            if (typeof this.connection.sandstormUser !== "undefined") {
+
+                // safe to use the function
+                var sandstormUser = this.connection.sandstormUser();
+                if (!sandstormUser) {
+                    console.log('no sandstormUser');
+                    return;
+                }else{
+                    console.log('sandTime READY');
+                }
+                return true;
             }else{
-                console.log('sandTime READY');
+                return false;
             }
-            return true;
         }
-        
     });
 
 });

@@ -7,7 +7,7 @@ Template.registerHelper('formatDate', function(date) {
 
 
 Template.userRoll.onCreated(function userRollOnCreated() {
-    Meteor.call('checkSandstormUserPermissions');
+    isSS = Meteor.call('checkSandstormUserPermissions');
 });
 
 /*
@@ -32,8 +32,20 @@ Template.userRoll.helpers({
                     and adds it to Mongo Collection
              */
             whichDie = event.target.innerHTML;
-            var guyID = Meteor.sandstormUser().id;
-            var guy = Meteor.sandstormUser().name;
+
+            // if (typeof Meteor.sandstormUser() === "function") {
+            if (isSS) {
+            // safe to use the function
+                var guyID = Meteor.sandstormUser().id;
+                var guy = Meteor.sandstormUser().name;
+            }else if(Meteor.user() !== null){
+                console.info(Meteor.user());
+                var guyID = Meteor.userId();
+                var guy =  Meteor.user().profile.name;
+            }else{
+                var guyID = 1;
+                var guy = "bozoJones";
+            }
 
             Meteor.call('rollIt', whichDie, guyID, guy, function (err, response) {
                 if (err) {
@@ -45,4 +57,3 @@ Template.userRoll.helpers({
 
         }
     };
-
